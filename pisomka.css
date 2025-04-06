@@ -1,0 +1,53 @@
+/* farby: 
+rgb(60, 85, 45)
+rgb(202, 115, 115)
+rgb(215, 178, 109)
+rgb(238, 226, 181)
+#3C552D zelena
+#CA7373 ruzova
+#D7B26D oranzova
+#EEE2B5 pieskova 
+*/
+
+body{
+    background-color: rgb(238, 226, 181);
+}
+.h1{
+    color: rgb(60, 85, 45);
+    text-align: right;
+}
+#ginkotitle{
+    font-size: 50px;
+}
+.title{
+    background-color: rgb(85, 108, 72);
+    color: rgb(215, 178, 109);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.p1{
+    font-style: italic;
+}
+.oddiel{
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+}
+.caption{
+    text-align: center;
+    display: block;
+}
+.ginkoimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    border-radius: 8px;
+}
+.oddielimg{
+    border-radius: 8px;
+}
+.navigation{
+    text-align: center;
+}
