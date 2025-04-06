@@ -1,53 +1,187 @@
-/* farby: 
-rgb(60, 85, 45)
-rgb(202, 115, 115)
-rgb(215, 178, 109)
-rgb(238, 226, 181)
-#3C552D zelena
-#CA7373 ruzova
-#D7B26D oranzova
-#EEE2B5 pieskova 
-*/
+:root {
+    /* Off-White (Teepee Canvas) - Good for content backgrounds */
+    --color-off-white: #F7F7F7;
 
-body{
-    background-color: rgb(238, 226, 181);
+    /* Muted Green (Grass/Near Trees) - Good for accents, secondary elements */
+    --color-muted-green: #9CB380;
+
+    /* Deep Forest Green (Distant Trees) - Good for main text, headings, primary elements */
+    --color-deep-forest-green: #4A5D55;
+
+    /* Soft Grey (Fog/Sky) - Good for secondary text, subtle backgrounds, borders */
+    --color-soft-grey: #D1D5DB;
+
+    /* Earthy Brown (Teepee Poles) - Good for accents, icons, links */
+    --color-earthy-brown: #8B7867;
 }
-.h1{
-    color: rgb(60, 85, 45);
-    text-align: right;
+
+body {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)), url(./pisomka_images/tabor.jpg);
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    margin: 0;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
-#ginkotitle{
-    font-size: 50px;
+
+p {
+    /* color: rgb(249, 243, 225); */
+    color: var(--color-off-white);
 }
-.title{
-    background-color: rgb(85, 108, 72);
-    color: rgb(215, 178, 109);
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+
+#logo {
+    flex: 1;
+    width: auto;
+    height: 100px;
 }
-.p1{
-    font-style: italic;
+
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 90px;
+    padding-left: 90px;
+
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.oddiel{
+
+.right-flex {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    color: white;
+    font-size: 28px;
+
+    margin-right: 30px;
+}
+
+.right-flex>a {
+    text-decoration: none;
+    color: var(--color-off-white);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 20px;
+    background-color: rgba(74, 93, 85, 0.9);
+
+    width: 60%;
+    border-radius: 4px;
+    padding: 16px;
+
+}
+
+.oddiely {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oddiely-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+#oddiely-title {
+    font-size: 38px;
+    color: var(--color-off-white);
+}
+
+li {
+    color: var(--color-off-white);
+}
+
+
+
+
+.title {
+    color: var(--color-muted-green);
+    font-size: 38px;
+    margin: 0;
+}
+
+
+.oddiel {
     display: inline-block;
     text-align: center;
     width: 200px;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px 10px 20px;
+    border-radius: 6px;
 }
-.caption{
+
+.caption {
     text-align: center;
     display: block;
+
+    text-decoration: none;
+    color: var(--color-off-white);
 }
-.ginkoimg{
+
+.ginkoimg {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 10%;
     border-radius: 8px;
 }
-.oddielimg{
+
+.oddielimg {
     border-radius: 8px;
 }
-.navigation{
+
+.navigation>a {
+    text-decoration: none;
+    color: var(--color-off-white);
+    margin-bottom: 60px;
+
+    font-size: 24px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 20px;
+
+}
+
+.arrow {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.6);
+
     text-align: center;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.footer>p {
+    margin: 0;
 }
